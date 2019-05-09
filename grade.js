@@ -3,8 +3,7 @@ function sleep(ms) {
 }
 
 async function main_func() {
-    let grades = document.querySelector('#menu_panel > ul > li.expand > ul > div > li.current > a');
-    grades.click();
+    document.querySelector("#menu_panel > ul > li.expand > ul > div > li:nth-child(10) > a").click()
     await sleep(2000);
     $("div[title='所有学期成绩']").click()
     var line = 1;
